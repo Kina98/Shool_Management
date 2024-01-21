@@ -38,7 +38,7 @@ class StudentController extends Controller
         ]);
         $image = $request->file('image');
         $destinationPath = 'image/';
-        $profileImage = date('YmdHis').'.'.$image->getClientOriginalExtension();
+        $profileImage = date('YmdHis').".".$image->getClientOriginalExtension();
         $image->move($destinationPath, $profileImage);
         $validateData['image'] = $profileImage;
 
