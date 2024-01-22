@@ -1,6 +1,7 @@
 @extends('layout')
 @section('content')
 <h1>Add student</h1>
+
 <form method="POST" action="{{route('students.store')}}" enctype="multipart/form-data">
 
     @csrf
